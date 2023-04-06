@@ -175,3 +175,17 @@ const contarCliquesArrow = () => {
   resultadoArrowElem.innerHTML = `Arrow Function: O total de cliques no botão foi de ${totalCliquesHeroFunction} vezes.`;
 };
 
+//5
+function media (nota1, nota2, nota3, nota4, nota5, nota6, nota7) {
+    const sum = (nota1 + nota2 + nota3 + nota4 + nota5 + nota6 + nota7) / 7;
+
+    if (sum >= 6) return "Você foi aprovado"
+
+    return "Você foi reprovado"
+}
+media(9, 6, 4, 6, 7, 10, 2)
+/* Saída: 
+  Você foi aprovado
+  */
+
+
