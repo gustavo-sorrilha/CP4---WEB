@@ -219,5 +219,11 @@ exibeFaixaEtaria(22)
    Adulto
    */
 
+//8
+function imparOuPar(numero) {
+  return numero % 2 === 0 ? "O número é par" : "O número é ímpar";
+}
+
+
 
 
