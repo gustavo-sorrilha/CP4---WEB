@@ -201,4 +201,23 @@ Login realizado com sucesso!
 */
 
 //7
+function exibeFaixaEtaria(idade) {
+  switch(true) {
+    case idade <= 12:
+      return "Criança";
+    case idade <= 18:
+      return "Adolescente";
+    case idade <= 60:
+      return "Adulto";
+    default:
+      return "Idoso";
+  }
+}
+
+exibeFaixaEtaria(22)
+/* Saída:
+   Adulto
+   */
+
+
 
