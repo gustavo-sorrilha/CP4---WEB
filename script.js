@@ -188,4 +188,17 @@ media(9, 6, 4, 6, 7, 10, 2)
   Você foi aprovado
   */
 
+//6
+function login({ username, senha }) {
+  return username === "admin" && senha === "1234"
+    ? "Login realizado com sucesso!"
+    : "Falha na autenticação";
+}
+login("admin", "1234")
+
+/* Saída: 
+Login realizado com sucesso!
+*/
+
+//7
 
