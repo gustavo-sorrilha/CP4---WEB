@@ -144,4 +144,34 @@ const soma = (a, b, c) => {
 };
 
 //4
+const h3Elem = document.createElement('h3');
+h3Elem.textContent = 'Total de Cliques:';
+
+const buttonElem = document.createElement('button');
+buttonElem.textContent = 'Clique aqui!';
+
+const resultadoElem = document.createElement('div');
+const resultadoArrowElem = document.createElement('div');
+
+document.body.appendChild(h3Elem);
+document.body.appendChild(buttonElem);
+document.body.appendChild(resultadoElem);
+document.body.appendChild(resultadoArrowElem);
+
+let totalCliques = 0;
+buttonElem.addEventListener('click', () => {
+  contarCliques();
+  contarCliquesArrow();
+});
+
+function contarCliques() {
+  totalCliques++;
+  resultadoElem.innerHTML = `Função Tradicional: O total de cliques no botão foi de ${totalCliques} vezes.`;
+}
+
+let totalCliquesHeroFunction = 0;
+const contarCliquesArrow = () => {
+  totalCliquesHeroFunction++;
+  resultadoArrowElem.innerHTML = `Arrow Function: O total de cliques no botão foi de ${totalCliquesHeroFunction} vezes.`;
+};
 
