@@ -12,7 +12,7 @@ const alunos = [
     turma: "1TDSPR",
     periodo: "Noite"
   };
- // a 
+ // a)
  const alunosEstudando = escola.alunos.filter(({ estudando }) => estudando);
  /*Saída: [
     {
@@ -25,7 +25,7 @@ const alunos = [
     }
  ]
  */
- //b 
+ //b)
  const aluno = alunos.find(({ nome }) => nome === "Gustavo");
  /*Saída: [
     {
@@ -34,7 +34,7 @@ const alunos = [
     },
  ]
  */
-// 2
+// 2)
 const funcionarios = [
     { 
         nome: "Felipe", 
@@ -67,7 +67,7 @@ const funcionarios = [
         dataDemissao: new Date("2019-04-10")  
     },
 ];
-// a
+// a)
     function estaNoIntervalo(data, inicio, fim) {
      return data.getFullYear() >= inicio && data.getFullYear() <= fim;
         }
@@ -86,7 +86,7 @@ const funcionarios = [
     }
     ]
 */
-// b
+// b)
 const demitidos = funcionarios.filter(({ dataDemissao }) => dataDemissao.getFullYear() > 2018);
 /* Saída: [
     { 
@@ -101,7 +101,7 @@ const demitidos = funcionarios.filter(({ dataDemissao }) => dataDemissao.getFull
     }
 ]
 */
-// c 
+// c)
 const funcionario = funcionarios.map(({ nome, salario, descontos }) => ({ nome, salario, descontos }));
 /* Saída: [
     {
@@ -121,8 +121,27 @@ const funcionario = funcionarios.map(({ nome, salario, descontos }) => ({ nome, 
     }
 ]
  */
-// d
+// d)
 const totalDesconto = funcionarios.reduce(
     (accumulator, { descontos }) => accumulator + descontos,
     0
 );
+// 3
+// a) 
+function soma(a, b, c) {
+  if (c === 0) {
+    throw new Error("Cannot divide by zero");
+  }
+  return (a + b) / c;
+}
+
+// b) 
+const soma = (a, b, c) => {
+  if (c === 0) {
+    throw new Error("Cannot divide by zero");
+  }
+  return (a + b) / c;
+};
+
+//4
+
