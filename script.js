@@ -7,7 +7,7 @@ const alunos = [
   
   const escola = {
     curso: "ANÁLISE E DESENVOLVIMENTO DE SISTEMAS",
-    alunos,
+    alunos: alunos,
     professor: "Welligton Cidade",
     turma: "1TDSPR",
     periodo: "Noite"
@@ -128,12 +128,7 @@ const totalDesconto = funcionarios.reduce(
 );
 // 3
 // a) 
-function soma(a, b, c) {
-  if (c === 0) {
-    throw new Error("Cannot divide by zero");
-  }
-  return (a + b) / c;
-}
+
 
 // b) 
 const soma = (a, b, c) => {
